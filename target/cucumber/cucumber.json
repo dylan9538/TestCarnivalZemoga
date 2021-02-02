@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4753325098,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BuscarVueloSteps.before()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Como usuario requiero realizar una busqueda personalziada de vuelo",
+        "description": "",
+        "id": "busqueda-de-vuelo;como-usuario-requiero-realizar-una-busqueda-personalziada-de-vuelo",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8036117325,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Se ingresa al navegador servicio de avianca",
+            "match": {
+              "location": "BuscarVueloSteps.ingresoAvianca()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7448821741,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Se seleccionan los parametros del vuelo",
+            "match": {
+              "location": "BuscarVueloSteps.ingresarusuario()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80744,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "se selecciona el vuelo",
+            "match": {
+              "location": "BuscarVueloSteps.seleccionaVuelo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26036966,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)\n\tat ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "verificar que se soliciten los campos adicionales",
+            "match": {
+              "location": "BuscarVueloSteps.verificarVuelo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Busqueda de Vuelo",
+    "description": "",
+    "id": "busqueda-de-vuelo",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/BuscarVuelo.feature"
+  }
+]

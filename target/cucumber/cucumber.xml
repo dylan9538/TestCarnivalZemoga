@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.264382">
+<testcase classname="Busqueda de Vuelo" name="Como usuario requiero realizar una busqueda personalziada de vuelo" time="20.264382">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)&#10;&#9;at ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)&#10;"><![CDATA[Given Se ingresa al navegador servicio de avianca...........................passed
+When Se seleccionan los parametros del vuelo................................passed
+And se selecciona el vuelo..................................................passed
+Then verificar que se soliciten los campos adicionales......................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)
+	at ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)
+]]></failure>
+</testcase>
+</testsuite>
