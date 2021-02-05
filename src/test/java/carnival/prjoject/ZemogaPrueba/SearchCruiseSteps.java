@@ -3,7 +3,6 @@ package carnival.prjoject.ZemogaPrueba;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.awt.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -25,6 +24,10 @@ public class SearchCruiseSteps {
 	JavascriptExecutor js;
 	WebDriverWait wait2;
 
+	/**
+	 * @name before
+	 * @description init driver and JavaScript Executor
+	 */
 	@cucumber.api.java.Before
 	public void before() {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
@@ -32,6 +35,11 @@ public class SearchCruiseSteps {
 		js = (JavascriptExecutor) driver;
 	}
 
+	/**
+	 * @name goToMainPage
+	 * @description Go to carnival page to start test , maximize and refresh the
+	 *              page
+	 */
 	@Given("^I am on carnival main page$")
 	public void goToMainPage() {
 		driver.get("https://www.carnival.com/");
@@ -40,6 +48,11 @@ public class SearchCruiseSteps {
 
 	}
 
+	/**
+	 * @name chooseSearhCriteria
+	 * @throws InterruptedException
+	 * @description Method that search cruises under a criteria
+	 */
 	@When("^Choose a type of cruises to search$")
 	public void chooseSearchCriteria() throws InterruptedException {
 		Thread.sleep(2000);
@@ -63,6 +76,10 @@ public class SearchCruiseSteps {
 		driver.findElement(By.cssSelector("a[data-tealium='cdc-search-cruises-cta']")).click();
 	}
 
+	/**
+	 * @name checkResults
+	 * @description Check if a grid exist on page, if exist an itinerary grid
+	 */
 	@Then("^A set of results are visible$")
 	public void checkResults() {
 
@@ -76,6 +93,11 @@ public class SearchCruiseSteps {
 		}
 	}
 
+	/**
+	 * @name movePoint
+	 * @throws InterruptedException
+	 * @description move a slider point to right side
+	 */
 	private void movePoint(WebElement slider, int value) throws InterruptedException {
 
 		int minValue = Integer.parseInt(
@@ -86,6 +108,13 @@ public class SearchCruiseSteps {
 		Thread.sleep(2000);
 	}
 
+	/**
+	 * @name checkFilter
+	 * @throws InterruptedException
+	 * @description Check if the filter works, after moving the filter bar by price,
+	 *              comparing the value of the first itinerary and the value of the
+	 *              itinerary after filtering
+	 */
 	@And("^its possible filter by price$")
 	public void checkFilter() throws InterruptedException {
 
@@ -111,6 +140,11 @@ public class SearchCruiseSteps {
 
 	}
 
+	/**
+	 * @name checkOrder
+	 * @throws InterruptedException
+	 * @description Verify if an order by xValue exist on page
+	 */
 	@And("^its possible order by price$")
 	public void checkOrder() {
 
@@ -120,6 +154,71 @@ public class SearchCruiseSteps {
 
 	}
 
+	/**
+	 * @name chooseACruise
+	 * @throws InterruptedException
+	 * @description Method that choose one cruise
+	 */
+	@And("^Choose an especific cruise option$")
+	public void chooseACruise() throws InterruptedException {
+
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		js.executeScript("window.scrollBy(0,200)");
+
+		driver.findElement(By.cssSelector("a[aria-label='Learn more about this sail The Bahamas']")).click();
+		Thread.sleep(1);
+
+	}
+
+	/**
+	 * @name pageloaded
+	 * @throws InterruptedException
+	 * @description check if page is loaded
+	 */
+	@Then("^itinerary page is opened$")
+	public void pageloaded() {
+		String currentURL = driver.getCurrentUrl();
+		assertTrue("Itinerary page did not charge", currentURL.startsWith("https://www.carnival.com/itinerary"));
+	}
+
+	/**
+	 * @name readDay
+	 * @throws InterruptedException
+	 * @description check if its possible see each day of cruise
+	 */
+	@And("^its possible read each day on page$")
+	public void readDay() {
+
+		assertNotNull("Its not possible each day", driver.findElement(By.cssSelector("div[class='daily-tiles']")));
+
+		java.util.List<WebElement> days = driver.findElements(By.cssSelector("div[class='itinerary-day-tile']"));
+		assertTrue("List of days doesnt exist", days.size() > 0);
+		assertNotNull("Its not possible see day 0", driver.findElement(By.cssSelector("div[itinerary-day='0']")));
+		assertNotNull("Its not possible see another day", driver.findElement(By.cssSelector("div[itinerary-day='1']")));
+
+	}
+
+	/**
+	 * @name buttonBookNow
+	 * @throws InterruptedException
+	 * @description check if book now button is present on page
+	 */
+	@And("^button BOOK NOW is present on page$")
+	public void buttonBookNow() {
+		if (driver.findElement(
+				By.xpath("//*[@id=\"sm-booking-btn\"]/booking-button/div/span/span/span[4]/span")) != null) {
+			assertTrue(true);
+			System.out.println("Esta boton BOOK NOW");
+		} else {
+			assertTrue("Buttton BOOK NOW doesn't exist", false);
+		}
+	}
+
+	/**
+	 * @name endTest
+	 * @throws InterruptedException
+	 * @description close all active instances driver
+	 */
 	@After
 	public void endTest() {
 		driver.quit();
