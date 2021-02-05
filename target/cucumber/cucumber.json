@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2445275684,
+              "duration": 2630453253,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 323339768,
+              "duration": 413231637,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9777931602,
+              "duration": 7969014515,
               "status": "passed"
             },
             "line": 3,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 8218483503,
+              "duration": 18947013724,
               "status": "passed"
             },
             "line": 4,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 187949637,
+              "duration": 220979323,
               "status": "passed"
             },
             "line": 5,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 8431827976,
+              "duration": 8407605277,
               "status": "passed"
             },
             "line": 6,
@@ -82,7 +82,7 @@
           },
           {
             "result": {
-              "duration": 14019386,
+              "duration": 17316818,
               "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
               "status": "failed"
             },
@@ -90,110 +90,6 @@
             "name": "its possible order by price",
             "match": {
               "location": "SearchCruiseSteps.checkOrder()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1647763209,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchCruiseSteps.before()"
-            }
-          }
-        ],
-        "line": 9,
-        "name": "As an user I want to  see more info about a cruise",
-        "description": "",
-        "id": "search-cruises;as-an-user-i-want-to--see-more-info-about-a-cruise",
-        "after": [
-          {
-            "result": {
-              "duration": 281446534,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SearchCruiseSteps.endTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4425327868,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I am on carnival main page",
-            "match": {
-              "location": "SearchCruiseSteps.goToMainPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 12054811520,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "Choose a type of cruises to search",
-            "match": {
-              "location": "SearchCruiseSteps.chooseSearchCriteria()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7413088453,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Choose an especific cruise option",
-            "match": {
-              "location": "SearchCruiseSteps.chooseACruise()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8888616,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "itinerary page is opened",
-            "match": {
-              "location": "SearchCruiseSteps.pageloaded()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 138975049,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "its possible read each day on page",
-            "match": {
-              "location": "SearchCruiseSteps.readDay()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 22265351,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "button BOOK NOW is present on page",
-            "match": {
-              "location": "SearchCruiseSteps.buttonBookNow()"
             },
             "keyword": "And "
           }

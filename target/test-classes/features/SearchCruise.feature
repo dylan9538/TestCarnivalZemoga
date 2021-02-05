@@ -5,4 +5,3 @@ When Choose a type of cruises to search
 Then A set of results are visible   
 And its possible filter by price 
 And its possible order by price
-
