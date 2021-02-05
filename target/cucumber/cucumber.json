@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 2445275684,
+              "duration": 3560785589,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 323339768,
+              "duration": 423954229,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9777931602,
+              "duration": 16089028359,
               "status": "passed"
             },
             "line": 3,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 8218483503,
+              "duration": 11379963986,
               "status": "passed"
             },
             "line": 4,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 187949637,
+              "duration": 198711882,
               "status": "passed"
             },
             "line": 5,
@@ -70,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 8431827976,
+              "duration": 9278258235,
               "status": "passed"
             },
             "line": 6,
@@ -82,8 +82,8 @@
           },
           {
             "result": {
-              "duration": 14019386,
-              "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
+              "duration": 13515439,
+              "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:152)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
               "status": "failed"
             },
             "line": 7,
@@ -99,7 +99,7 @@
         "before": [
           {
             "result": {
-              "duration": 1647763209,
+              "duration": 2343532963,
               "status": "passed"
             },
             "match": {
@@ -114,7 +114,7 @@
         "after": [
           {
             "result": {
-              "duration": 281446534,
+              "duration": 591970178,
               "status": "passed"
             },
             "match": {
@@ -127,7 +127,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4425327868,
+              "duration": 13176588979,
               "status": "passed"
             },
             "line": 10,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 12054811520,
+              "duration": 21037489444,
               "status": "passed"
             },
             "line": 11,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 7413088453,
+              "duration": 11783169990,
               "status": "passed"
             },
             "line": 12,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 8888616,
+              "duration": 15421961,
               "status": "passed"
             },
             "line": 13,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 138975049,
+              "duration": 183511818,
               "status": "passed"
             },
             "line": 14,
@@ -187,7 +187,7 @@
           },
           {
             "result": {
-              "duration": 22265351,
+              "duration": 24140916,
               "status": "passed"
             },
             "line": 15,

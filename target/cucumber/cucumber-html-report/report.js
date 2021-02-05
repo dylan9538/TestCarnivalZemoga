@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2445275684,
+  "duration": 3560785589,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,44 +47,44 @@ formatter.match({
   "location": "SearchCruiseSteps.goToMainPage()"
 });
 formatter.result({
-  "duration": 9777931602,
+  "duration": 16089028359,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.chooseSearchCriteria()"
 });
 formatter.result({
-  "duration": 8218483503,
+  "duration": 11379963986,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.checkResults()"
 });
 formatter.result({
-  "duration": 187949637,
+  "duration": 198711882,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.checkFilter()"
 });
 formatter.result({
-  "duration": 8431827976,
+  "duration": 9278258235,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.checkOrder()"
 });
 formatter.result({
-  "duration": 14019386,
-  "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
+  "duration": 13515439,
+  "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:152)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
   "status": "failed"
 });
 formatter.after({
-  "duration": 323339768,
+  "duration": 423954229,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1647763209,
+  "duration": 2343532963,
   "status": "passed"
 });
 formatter.scenario({
@@ -129,46 +129,46 @@ formatter.match({
   "location": "SearchCruiseSteps.goToMainPage()"
 });
 formatter.result({
-  "duration": 4425327868,
+  "duration": 13176588979,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.chooseSearchCriteria()"
 });
 formatter.result({
-  "duration": 12054811520,
+  "duration": 21037489444,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.chooseACruise()"
 });
 formatter.result({
-  "duration": 7413088453,
+  "duration": 11783169990,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.pageloaded()"
 });
 formatter.result({
-  "duration": 8888616,
+  "duration": 15421961,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.readDay()"
 });
 formatter.result({
-  "duration": 138975049,
+  "duration": 183511818,
   "status": "passed"
 });
 formatter.match({
   "location": "SearchCruiseSteps.buttonBookNow()"
 });
 formatter.result({
-  "duration": 22265351,
+  "duration": 24140916,
   "status": "passed"
 });
 formatter.after({
-  "duration": 281446534,
+  "duration": 591970178,
   "status": "passed"
 });
 });
