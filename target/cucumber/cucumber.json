@@ -6,77 +6,204 @@
         "before": [
           {
             "result": {
-              "duration": 4753325098,
+              "duration": 2445275684,
               "status": "passed"
             },
             "match": {
-              "location": "BuscarVueloSteps.before()"
+              "location": "SearchCruiseSteps.before()"
             }
           }
         ],
         "line": 2,
-        "name": "Como usuario requiero realizar una busqueda personalziada de vuelo",
+        "name": "As an user I want to search a cruise from bahamas with duration between",
         "description": "",
-        "id": "busqueda-de-vuelo;como-usuario-requiero-realizar-una-busqueda-personalziada-de-vuelo",
+        "id": "search-cruises;as-an-user-i-want-to-search-a-cruise-from-bahamas-with-duration-between",
+        "after": [
+          {
+            "result": {
+              "duration": 323339768,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchCruiseSteps.endTest()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8036117325,
+              "duration": 9777931602,
               "status": "passed"
             },
             "line": 3,
-            "name": "Se ingresa al navegador servicio de avianca",
+            "name": "I am on carnival main page",
             "match": {
-              "location": "BuscarVueloSteps.ingresoAvianca()"
+              "location": "SearchCruiseSteps.goToMainPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 7448821741,
+              "duration": 8218483503,
               "status": "passed"
             },
             "line": 4,
-            "name": "Se seleccionan los parametros del vuelo",
+            "name": "Choose a type of cruises to search",
             "match": {
-              "location": "BuscarVueloSteps.ingresarusuario()"
+              "location": "SearchCruiseSteps.chooseSearchCriteria()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 80744,
+              "duration": 187949637,
               "status": "passed"
             },
             "line": 5,
-            "name": "se selecciona el vuelo",
+            "name": "A set of results are visible",
             "match": {
-              "location": "BuscarVueloSteps.seleccionaVuelo()"
+              "location": "SearchCruiseSteps.checkResults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8431827976,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "its possible filter by price",
+            "match": {
+              "location": "SearchCruiseSteps.checkFilter()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 26036966,
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertTrue(Assert.java:52)\n\tat avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)\n\tat ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)\n",
+              "duration": 14019386,
+              "error_message": "java.lang.AssertionError: Order option not found!\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)\n\tat ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)\n",
               "status": "failed"
             },
-            "line": 6,
-            "name": "verificar que se soliciten los campos adicionales",
+            "line": 7,
+            "name": "its possible order by price",
             "match": {
-              "location": "BuscarVueloSteps.verificarVuelo()"
+              "location": "SearchCruiseSteps.checkOrder()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1647763209,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchCruiseSteps.before()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "As an user I want to  see more info about a cruise",
+        "description": "",
+        "id": "search-cruises;as-an-user-i-want-to--see-more-info-about-a-cruise",
+        "after": [
+          {
+            "result": {
+              "duration": 281446534,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchCruiseSteps.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4425327868,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on carnival main page",
+            "match": {
+              "location": "SearchCruiseSteps.goToMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12054811520,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Choose a type of cruises to search",
+            "match": {
+              "location": "SearchCruiseSteps.chooseSearchCriteria()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7413088453,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Choose an especific cruise option",
+            "match": {
+              "location": "SearchCruiseSteps.chooseACruise()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8888616,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "itinerary page is opened",
+            "match": {
+              "location": "SearchCruiseSteps.pageloaded()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138975049,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "its possible read each day on page",
+            "match": {
+              "location": "SearchCruiseSteps.readDay()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22265351,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "button BOOK NOW is present on page",
+            "match": {
+              "location": "SearchCruiseSteps.buttonBookNow()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Busqueda de Vuelo",
+    "name": "Search Cruises",
     "description": "",
-    "id": "busqueda-de-vuelo",
+    "id": "search-cruises",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/BuscarVuelo.feature"
+    "uri": "src/test/resources/features/SearchCruise.feature"
   }
 ]

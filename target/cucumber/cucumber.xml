@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="20.264382">
-<testcase classname="Busqueda de Vuelo" name="Como usuario requiero realizar una busqueda personalziada de vuelo" time="20.264382">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#10;&#9;at avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)&#10;&#9;at ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)&#10;"><![CDATA[Given Se ingresa al navegador servicio de avianca...........................passed
-When Se seleccionan los parametros del vuelo................................passed
-And se selecciona el vuelo..................................................passed
-Then verificar que se soliciten los campos adicionales......................failed
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="55.391395">
+<testcase classname="Search Cruises" name="As an user I want to search a cruise from bahamas with duration between" time="29.398828">
+<failure message="java.lang.AssertionError: Order option not found!&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)&#10;&#9;at ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)&#10;"><![CDATA[Given I am on carnival main page............................................passed
+When Choose a type of cruises to search.....................................passed
+Then A set of results are visible...........................................passed
+And its possible filter by price............................................passed
+And its possible order by price.............................................failed
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
+java.lang.AssertionError: Order option not found!
+	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at avianca.prjoject.AviancaPrueba.BuscarVueloSteps.verificarVuelo(BuscarVueloSteps.java:56)
-	at ✽.Then verificar que se soliciten los campos adicionales(src/test/resources/features/BuscarVuelo.feature:6)
+	at carnival.prjoject.ZemogaPrueba.SearchCruiseSteps.checkOrder(SearchCruiseSteps.java:117)
+	at ✽.And its possible order by price(src/test/resources/features/SearchCruise.feature:7)
 ]]></failure>
+</testcase>
+<testcase classname="Search Cruises" name="As an user I want to  see more info about a cruise" time="25.992567">
+<system-out><![CDATA[Given I am on carnival main page............................................passed
+When Choose a type of cruises to search.....................................passed
+And Choose an especific cruise option.......................................passed
+Then itinerary page is opened...............................................passed
+And its possible read each day on page......................................passed
+And button BOOK NOW is present on page......................................passed
+]]></system-out>
 </testcase>
 </testsuite>
